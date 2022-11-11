@@ -1,0 +1,33 @@
+GET http://localhost:2020/user
+
+###
+GET  http://localhost:2020/user/
+
+###
+GET  http://localhost:2020/user/peter HTTP/1.1
+
+
+
+###
+POST http://localhost:2020/user   HTTP/1.1
+Content-Type: application/json
+{
+    "name": "nnenna",
+    "title": "Going to d bank"
+}
+
+###
+PUT http://localhost:2020/user/0011   HTTP/1.1
+Content-Type: application/json
+{
+    "name": "Adam",
+    "title": "Going to market"
+}
+
+###
+DELETE  http://localhost:2020/user/0012   HTTP/1.1
+Content-Type: application/json
+{
+    "name": "Blessed",
+    "title": "COOK"
+}
